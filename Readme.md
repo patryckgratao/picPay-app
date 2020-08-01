@@ -14,8 +14,6 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
-![App Screenshot](https://instagram.fgyn5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/94572279_534613477427904_3371032320597956232_n.jpg?_nc_ht=instagram.fgyn5-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=3jwubOawYVQAX8m46_G&oh=20b5f4fab60e3f5dc8c965568626cb4b&oe=5F4E8D84)
-
 ## :rocket: Tecnologias
 
 Este projeto foi desenvolvido no [Live Coding do Matheus Silva](https://www.youtube.com/watch?v=0CraBZHejKI) com as seguintes tecnologias:
