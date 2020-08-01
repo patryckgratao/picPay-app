@@ -1,6 +1,124 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Feather, MaterialCommunityIcons, AntDesign } from '@expo/vector-icons'; 
+import { Switch } from 'react-native';
+
+import { 
+  Wrapper, 
+  Container,
+  Header, 
+  HeaderContainer, 
+  Title,
+  BalanceContainer,
+  Value,
+  Bold,
+  EyeButton,
+  Info,
+  Actions,
+  Action,
+  ActionLabel,
+  UseBalance,
+  UseBalanceTitle,
+  PaymentMethods,
+  PaymentMethodsTitle,
+  Card,
+  CardBody,
+  CardDetails,
+  CardTitle,
+  CardInfo,
+  Img,
+  AddButton,
+  AddLabel,
+  UseTicketContainer,
+  UseTicketButton,
+  UseTicketLabel
+} from './styles';
+
+import creditCard from '../../images/credit-card.png';
 
 export default function Wallet() {
-  return <Text>Wallet</Text>
+  return (
+    <Wrapper>
+      <Container>
+        <Header colors={['#52e78c', '#1ab563']}> 
+          <HeaderContainer>
+            <Title>Saldo PicPay</Title>
+            <BalanceContainer>
+              <Value>
+                R$ <Bold>0,00</Bold>
+              </Value>
+
+              <EyeButton>
+                <Feather name="eye" size={28} color="#fff" />
+              </EyeButton>
+            </BalanceContainer>
+
+            <Info>
+              Seu saldo está rendendo 120% do CDI
+            </Info>
+
+            <Actions>
+              <Action>
+                <MaterialCommunityIcons name="cash" size={28} color="#fff" />
+                <ActionLabel>Adicionar</ActionLabel>
+              </Action>
+
+              <Action>
+                <MaterialCommunityIcons name="bank" size={24} color="#fff" />
+                <ActionLabel>Retirar</ActionLabel>
+              </Action>
+            </Actions>
+
+          </HeaderContainer>
+        </Header>
+
+        <UseBalance>
+          <UseBalanceTitle>
+            Usar saldo ao pagar
+          </UseBalanceTitle>
+
+          <Switch>
+
+          </Switch>
+        </UseBalance>
+
+        <PaymentMethods>
+          <PaymentMethodsTitle>
+            Métodos de Pagamento
+          </PaymentMethodsTitle>
+
+          <Card>
+            <CardBody>
+              <CardDetails>
+                <CardTitle>
+                  Cadastre seu cartão de crédito
+                </CardTitle>
+                <CardInfo>
+                  Cadastre seu cartão de crédito para fazer pagamentos mesmo quando não tiver saldo no seu PicPay
+                </CardInfo>
+              </CardDetails>
+
+              <Img source={creditCard} resizeMode="contain" />
+            </CardBody>
+
+            <AddButton>
+              <AntDesign name="pluscircleo" size={24} color="#0db060" />
+              <AddLabel>
+                Adicionar cartão de crédito
+              </AddLabel>
+            </AddButton>
+          </Card>
+
+          <UseTicketContainer>
+            <UseTicketButton>
+              <MaterialCommunityIcons name="ticket-outline" size={20} color="#0db060" />
+              <UseTicketLabel>
+                Usar Código Promocional
+              </UseTicketLabel>
+            </UseTicketButton>
+          </UseTicketContainer>
+
+        </PaymentMethods>
+      </Container>
+    </Wrapper>
+  )
 }
