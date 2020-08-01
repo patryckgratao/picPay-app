@@ -29,7 +29,7 @@ Para executar essa aplicação você deverá instalar o [Git](https://git-scm.co
 
 ```bash
 # Clonar esse repositório
-$ git clone https://github.com/patryckgratao/pic-pay-app
+$ git clone https://github.com/patryckgratao/picPay-app
 
 # Vá até o repositório baixado
 $ cd pic-pay-app
